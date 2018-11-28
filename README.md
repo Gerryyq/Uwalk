@@ -29,4 +29,5 @@ Step 1: Clone git repo
 Step 2: From Android Studio open new project and select the folder "Uwalk"
 Step 3: Build the project
 Step 4: Run the project, either on selected emulator or android devices detected by Android Studio
+*Tested on Samsung Galaxy S8
 
