@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_viewStory"
+        android:icon="@drawable/ic_book"
+        android:title="@string/title_viewStory" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_storylist"-->
+        <!--android:icon="@drawable/ic_storylist"-->
+        <!--android:title="@string/title_storylist" />-->
+
+    <item
+        android:id="@+id/navigation_stars"
+        android:icon="@drawable/ic_star_white"
+        android:title="@string/title_stars" />
+
+</menu>

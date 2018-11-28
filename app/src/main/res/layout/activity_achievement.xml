@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_progressbar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_marginBottom="42dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="30dp"
+        android:text="Text Here"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:drawableLeft="@drawable/ic_star_white"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="30dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="100"
+        />
+
+        <TextView
+            android:id="@+id/text_achievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar4"
+            android:paddingTop="13dp"
+            android:text="Achievements"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+               android:layout_centerHorizontal="true"
+             />
+
+        <ImageView
+        android:id="@+id/image_trophy"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text_progressbar4"
+        android:layout_toLeftOf="@id/text_achievement"
+        android:src="@drawable/trophy"
+        android:scaleY="0.7"
+        android:scaleX="0.7"/>
+
+        <ImageView
+            android:id="@+id/image_walking"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/text_adventurer_distance"
+            android:layout_toLeftOf="@id/text_adventurer"
+            android:src="@drawable/walking"
+            android:scaleY="0.7"
+            android:scaleX="0.7"/>
+        <ImageView
+        android:id="@+id/image_book"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/text_drama_completed"
+        android:layout_toLeftOf="@id/text_drama"
+        android:src="@drawable/book"
+        android:scaleY="0.8"
+        android:scaleX="0.8"/>
+        <ImageView
+            android:id="@+id/image_winner"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/text_achiever_cleared"
+            android:layout_toLeftOf="@id/text_achiever"
+            android:src="@drawable/winner"
+            android:scaleY="0.9"
+            android:scaleX="0.9"/>
+
+        <TextView
+            android:id="@+id/text_adventurer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adventurer #1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@id/text_achievement"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="30dp"/>
+        <TextView
+            android:id="@+id/text_adventurer_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Covered 0/500m"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_below="@id/text_adventurer"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/text_drama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drama Mama #1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@id/text_adventurer_distance"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="30dp"/>
+        <TextView
+            android:id="@+id/text_drama_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed 0/10 stories"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_below="@id/text_drama"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/text_achiever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Achiever #1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@id/text_drama_completed"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="30dp"/>
+        <TextView
+            android:id="@+id/text_achiever_cleared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleared 0/10 challenges"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_below="@id/text_achiever"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#008080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        />
+</android.support.constraint.ConstraintLayout>

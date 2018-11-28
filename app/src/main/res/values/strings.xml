@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Uwalk</string>
+    <string name="title_storylist">StoryList</string>
+    <string name="title_viewStory">All Stories</string>
+    <string name="title_stars">Stars</string>
+    <string name="title_home">Home</string>
+    <string name="text_story_description">Description</string>
+    <string name="text_empty">There are no stories available</string>
+    <string name="please_turn_on_gps">Please turn on location service</string>
+    <string name="cancel">Cancel</string>
+    <string name="open_location_settings">Open location setting</string>
+
+
+</resources>
